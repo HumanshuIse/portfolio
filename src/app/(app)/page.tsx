@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   title: "Humanshu Ise – Full Stack Developer",
   description:
-    "Official portfolio of Humanshu Ise, a Full Stack Developer from Pune building modern web apps, AI products, and scalable software systems.",
+    "Official website and portfolio of Humanshu Ise, a Full Stack Developer from Pune building modern web apps, AI products, and scalable software systems.",
 }
 
 export default function HomePage() {
@@ -90,8 +90,18 @@ function getPageJsonLd(): WithContext<PageSchema> {
     mainEntity: {
       "@type": "Person",
       name: USER.displayName,
+      url: "https://humanshuise.in",
       identifier: USER.username,
-      image: USER.avatar,
+      image: "https://humanshuise.in/avatar.png",
+      jobTitle: USER.jobTitle,
+      knowsAbout: [
+        "Full-stack development",
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "AI-powered applications",
+      ],
     },
   }
 }

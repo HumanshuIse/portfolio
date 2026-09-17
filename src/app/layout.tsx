@@ -18,7 +18,7 @@ function getWebSiteJsonLd(): WithContext<WebSite> {
     "@type": "WebSite",
     name: SITE_INFO.name,
     url: SITE_INFO.url,
-    alternateName: [USER.username],
+    alternateName: ["Humanshu Ise portfolio", USER.username],
   }
 }
 
@@ -27,6 +27,7 @@ function getPersonJsonLd(): WithContext<Person> {
     "@context": "https://schema.org",
     "@type": "Person",
     name: USER.displayName,
+    alternateName: ["Humanshu Ise", "humanshuise", USER.username],
     givenName: USER.firstName,
     familyName: USER.lastName,
     url: SITE_INFO.url,

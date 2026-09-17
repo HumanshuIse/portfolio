@@ -6,7 +6,7 @@ export const SITE_INFO = {
   url: process.env.APP_URL || "https://humanshuise.in",
   ogImage: USER.ogImage,
   description:
-    "Humanshu Ise is a Full Stack Developer from Pune, India building modern web applications, AI-powered products, and scalable full-stack systems.",
+    "Official website and portfolio of Humanshu Ise, a Full Stack Developer from Pune, India building modern web applications, AI-powered products, and scalable software systems.",
   keywords: USER.keywords,
 }
 
